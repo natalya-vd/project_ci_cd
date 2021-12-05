@@ -1,0 +1,1 @@
+<img src="https://github.com/natalya-vd/project_ci_cd/workflows/deploy/badge.svg?branch=main">

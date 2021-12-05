@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: deploy
+    branches: main
 
 jobs:
   deploy:
@@ -17,6 +17,6 @@ jobs:
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" --remote my-origin
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" -- remote my-origin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
