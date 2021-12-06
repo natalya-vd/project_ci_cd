@@ -9,7 +9,7 @@
     "test": "mocha ./tests/index.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .",
-    "build": "rimraf dist && ls -al && ls -al src/ && parcel build src/index.html --out-dir dist --public-url ./",
+    "build": "rimraf dist && parcel build src/index.html --out-dir dist --public-url ./",
     "deploy": "npm run build && gh-pages -d dist --remote my-origin"
   },
   "keywords": [
